@@ -41,6 +41,3 @@ def get_license(spdx: str) -> Response:
     res = Response(str(license_text.text), 200)
     res.headers['Content-Type'] = 'text/plain'
     return res
-
-if __name__ == '__main__':
-    app.run()
